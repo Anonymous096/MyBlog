@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 import styles from "./categoryList.module.css";
 
 export const CategoryList = () => {
@@ -8,7 +8,10 @@ export const CategoryList = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>Popular categories</h1>
       <div className={styles.categories}>
-        <Link href="/blog?cat=style" className={`${styles.category} ${styles.style}`}>
+        <Link
+          href="/blog?cat=style"
+          className={`${styles.category} ${styles.style}`}
+        >
           <Image
             src="/style.png"
             alt=""
@@ -70,7 +73,7 @@ export const CategoryList = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CategoryList
+export default CategoryList;

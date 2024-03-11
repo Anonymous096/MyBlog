@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import styles from "./pagination.module.css";
 
 export const Pagination = () => {
@@ -7,7 +7,7 @@ export const Pagination = () => {
       <button className={styles.button}>Previous</button>
       <button className={styles.button}>Next</button>
     </div>
-  )
-}
+  );
+};
 
-export default Pagination
+export default Pagination;

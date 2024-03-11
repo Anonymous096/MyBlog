@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import Pagination from "../pagination/Pagination";
-import Card from "../card/Card"
+import Card from "../card/Card";
 import styles from "./cardList.module.css";
 
 export const CardList = () => {
@@ -8,14 +8,14 @@ export const CardList = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>Recent Posts</h1>
       <div className={styles.posts}>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
-      <Pagination/>
+      <Pagination />
     </div>
-  )
-}
+  );
+};
 
-export default CardList
+export default CardList;

@@ -1,24 +1,24 @@
-import React from 'react'
-import MenuPosts from '../menuPosts/MenuPosts'
+import React from "react";
+import MenuPosts from "../menuPosts/MenuPosts";
 import styles from "./menu.module.css";
-import MenuCategories from '../menuCategories/MenuCategories'
+import MenuCategories from "../menuCategories/MenuCategories";
 
 export const Menu = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.subtitle}>{"What's Hot"}</h2>
       <h1 className={styles.title}>Most Popular</h1>
-      <MenuPosts withImage={false}/>
-      
+      <MenuPosts withImage={false} />
+
       <h2 className={styles.subtitle}>Discover by Topics</h2>
       <h1 className={styles.title}>Categories</h1>
-      <MenuCategories/>
+      <MenuCategories />
 
       <h2 className={styles.subtitle}>Chosen By Editor</h2>
       <h1 className={styles.title}>Editors Pick</h1>
-      <MenuPosts withImage={true}/>
+      <MenuPosts withImage={true} />
     </div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
