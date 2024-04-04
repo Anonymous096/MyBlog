@@ -42,7 +42,7 @@ const SinglePage = async ({ params }) => {
         </div>
         {data?.img && (
           <div className={styles.imageContainer}>
-            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+            <Image src={data.img} alt="" fill className={styles.image} />
           </div>
         )}
       </div>
@@ -53,7 +53,7 @@ const SinglePage = async ({ params }) => {
             dangerouslySetInnerHTML={{ __html: data?.desc }}
           />
           <div className={styles.comment}>
-            <Comments />
+            <Comments postSlug={slug} />
           </div>
         </div>
         <Menu />
