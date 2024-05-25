@@ -20,6 +20,7 @@ const fetcher = async (url) => {
 
 const Comments = ({ postSlug }) => {
   const { status } = useSession();
+  //console.log(postSlug);
   const { data, isLoading } = useSWR(
     `http://localhost:3000/api/comments?postSlug=${postSlug}`,
     fetcher
@@ -64,10 +65,12 @@ const Comments = ({ postSlug }) => {
   );
 };
 
-const WrappedComments = ({ session }) => (
+const WrappedComments = ({ session, postSlug }) => (
   <SessionProvider session={session}>
-    <Comments />
+    <Comments postSlug={postSlug} />
   </SessionProvider>
 );
 
 export default WrappedComments;
+
+// export default Comments;
