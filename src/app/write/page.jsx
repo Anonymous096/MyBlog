@@ -12,13 +12,11 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 import { app } from "@/utils/firebase";
-// import { useRouter } from "next/navigation";
 
 const storage = getStorage(app);
 
 const WritePage = () => {
   const { status } = useSession();
-  // const router = useRouter();
 
   const [open, setOpen] = useState(false);
   const [file, setFile] = useState(null);
