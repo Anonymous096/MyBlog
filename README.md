@@ -1,34 +1,135 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mind Canvas
+
+Mind Canvas is a full stack blog application inspired by Medium.com. This project leverages the power of Next.js for the frontend, MongoDB for the database, Prisma Studio for database management, and Firebase for authentication. It also features a day and night mode for improved user experience.
+
+## Features
+
+- **User Authentication**: Secure authentication using OAuth and Firebase.
+- **Rich Text Editor**: Create and edit blog posts with a user-friendly editor.
+- **Responsive Design**: Mobile-first design, ensuring usability across all devices.
+- **Day and Night Mode**: Toggle between day and night modes for a comfortable reading experience.
+- **User Profiles**: Each user has a profile page displaying their posts and bio.
+- **Post Management**: Create, edit, delete, and view blog posts.
+- **Comments System**: Engage with readers through comments on posts.
+
+## Tech Stack
+
+- **Frontend**: Next.js
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **ORM**: Prisma
+- **Authentication**: Firebase, OAuth
+- **Styling**: Tailwind CSS
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Ensure you have the following installed on your development machine:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (v14.x or later)
+- npm (v6.x or later) or Yarn (v1.x or later)
+- MongoDB (local or cloud instance)
+- Firebase account for authentication setup
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clone the repository**:
 
-## Learn More
+    ```bash
+    git clone https://github.com/yourusername/mind-canvas.git
+    cd mind-canvas
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    or
 
-## Deploy on Vercel
+    ```bash
+    yarn install
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Set up environment variables**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    Create a `.env.local` file in the root directory and add the following environment variables:
+
+    ```env
+    GOOGLE_ID=your_google_id
+    GOOGLE_SECRET=your_google_secret_key
+    NEXTAUTH_URL=your_nextAuth_url_localhost:3000
+    NEXTAUTH_SECRET=your_nextAuth_secret_key
+    DATABASE_URL=your_mongodb_key
+    FIREBASE=your_firebase_api_key
+    ```
+
+4. **Run the development server**:
+
+    ```bash
+    npm run dev
+    ```
+
+    or
+
+    ```bash
+    yarn dev
+    ```
+
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Prisma Setup
+
+1. **Initialize Prisma**:
+
+    ```bash
+    npx prisma init
+    ```
+
+2. **Migrate the database**:
+
+    ```bash
+    npx prisma migrate dev --name init
+    ```
+
+3. **Open Prisma Studio**:
+
+    ```bash
+    npx prisma studio
+    ```
+
+## Usage
+
+- **Authentication**: Sign up or log in using OAuth via Firebase.
+- **Create a Post**: Navigate to the "New Post" page to create a blog post.
+- **Manage Posts**: Edit or delete your posts from your profile page.
+- **Toggle Day/Night Mode**: Use the toggle switch to switch between day and night modes.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Acknowledgements
+
+- Inspired by [Medium.com](https://medium.com)
+- Thanks to the developers of Next.js, MongoDB, Prisma, and Firebase for their awesome tools.
+
+## Contact
+
+For any questions or feedback, please reach out at [your-email@example.com].
+
+---
+
+Happy coding!
