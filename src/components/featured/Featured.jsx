@@ -14,17 +14,19 @@ export const Featured = () => {
         </div>
         <div className={styles.textcontainer}>
           <h1 className={styles.postTitle}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            delectus repell
+            Welcome to Mind Canvas, A blog by Saksham Sharma. the daily diary
+            and tech knowledge
           </h1>
           <p className={styles.postDesc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            non quaerat, aperiam hic, error doloribus vitae veritatis amet
-            laboriosam quod assumenda. Quos consequatur atque explicabo
-            cupiditate nam ipsam exercitationem quisquam. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Exercitationem quo earum
-            temporibus cumque commodi dolore placeat ad ex modi, optio repellat,
-            impedit molestias ea possimus autem laudantium esse. Aut, quo!
+            Mind Canvas is created to document my personal thoughts and to share
+            the knowledge about the modern tech and Programming things. The tech
+            stack that is used here is Next Js a react framework and MongoDb and
+            prisma for database and firebase for writing or creating the blog.
+            For backend the tech stack that is used is Next Js itself and
+            firebase. In my mind canvas you can see the posts descriptions
+            inside a paragraph tag its because you are reading the mind of a
+            coder. just kidding guys its a bug will be fixed soon hehe... The
+            design is inspired by Medium.com
           </p>
           <button className={styles.button}>Read More</button>
         </div>
