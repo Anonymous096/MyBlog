@@ -38,7 +38,7 @@ Ensure you have the following installed on your development machine:
 
     ```bash
     git clone https://github.com/yourusername/MyBlog.git
-    cd MyBlog.
+    cd MyBlog
     ```
 
 2. **Install dependencies**:
