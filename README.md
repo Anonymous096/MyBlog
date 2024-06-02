@@ -37,8 +37,8 @@ Ensure you have the following installed on your development machine:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/yourusername/mind-canvas.git
-    cd mind-canvas
+    git clone https://github.com/yourusername/MyBlog.git
+    cd MyBlog
     ```
 
 2. **Install dependencies**:
