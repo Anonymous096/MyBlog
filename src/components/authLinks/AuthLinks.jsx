@@ -49,8 +49,6 @@ const AuthLinks = () => {
   );
 };
 
-// export default AuthLinks;
-
 const WrappedLoginPage = ({ session }) => (
   <SessionProvider session={session}>
     <AuthLinks />
