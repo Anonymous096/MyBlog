@@ -1,4 +1,3 @@
-import Link from "next/link"; // Add the missing import statement
 import Featured from "../components/featured/Featured";
 import CategoryList from "../components/categoryList/CategoryList";
 import CardList from "../components/cardList/CardList";
