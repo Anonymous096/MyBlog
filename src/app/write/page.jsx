@@ -45,7 +45,7 @@ const WritePage = () => {
               break;
           }
         },
-        (error) => {
+        (_error) => {
           // Handle unsuccessful uploads
         },
         () => {
